@@ -49,6 +49,10 @@ export default class AnimatedSceneToggle extends Component {
       : I18n.t(themePrefix("animated_scene_toggle.switch_to_dark"));
   }
 
+  get labelText() {
+    return I18n.t(themePrefix("animated_scene_toggle.label"));
+  }
+
   get showLabel() {
     return settings.show_label;
   }
@@ -123,7 +127,7 @@ export default class AnimatedSceneToggle extends Component {
 
             {{#if this.showLabel}}
               <span class="animated-scene-toggle__label">
-                {{theme-i18n "animated_scene_toggle.label"}}
+                {{this.labelText}}
               </span>
             {{/if}}
           </:default>
