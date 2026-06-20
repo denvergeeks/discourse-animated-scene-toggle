@@ -1,8 +1,8 @@
 en:
   theme_metadata:
-    description: "Animated scene-based light/dark toggle for Discourse core color mode switching"
+    description: "Animated mountain scene dark/light toggle wired to Discourse color schemes"
 
-  animated_scene_toggle:
-    label: "Color mode"
+  mountain_toggle:
     switch_to_dark: "Switch to dark mode"
     switch_to_light: "Switch to light mode"
+    color_mode: "Color mode"
