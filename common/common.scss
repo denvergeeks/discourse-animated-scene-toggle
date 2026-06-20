@@ -5,6 +5,8 @@
 
 .mountain-toggle-button {
   --mountain_y: 0;
+  --mountain-toggle-width: 72px;
+  --mountain-toggle-height: 36px;
   border: 0;
   padding: 0;
   margin: 0;
@@ -27,8 +29,8 @@
   --mountain_y: 0;
   position: relative;
   display: block;
-  width: 72px;
-  height: 36px;
+  width: var(--mountain-toggle-width);
+  height: var(--mountain-toggle-height);
   overflow: hidden;
   border-radius: 999px;
   pointer-events: none;
@@ -115,49 +117,49 @@
   transform: translateX(-15px);
 }
 
-.mountain-toggle-scene-wrapper [class*="mountain"]:not(.mountain3) {
+.mountain-toggle-scene-wrapper.has-intro-animation [class*="mountain"]:not(.mountain3) {
   transform: translateY(var(--mountain_y));
   animation: mountain-toggle-go-up 1s both;
 }
 
-.mountain-toggle-scene-wrapper .mountain2 {
+.mountain-toggle-scene-wrapper.has-intro-animation .mountain2 {
   animation-delay: 0.05s;
 }
 
-.mountain-toggle-scene-wrapper .mountain3 {
+.mountain-toggle-scene-wrapper.has-intro-animation .mountain3 {
   transform: translateX(10px) scaleX(1.04) translateY(var(--mountain_y));
   animation: mountain-toggle-go-up 1s 0.1s both;
 }
 
-.mountain-toggle-scene-wrapper .mountain4 {
+.mountain-toggle-scene-wrapper.has-intro-animation .mountain4 {
   animation-delay: 0.15s;
 }
 
-.mountain-toggle-scene-wrapper .mountain5 {
+.mountain-toggle-scene-wrapper.has-intro-animation .mountain5 {
   animation-delay: 0.2s;
 }
 
-.mountain-toggle-scene-wrapper .mountain6 {
+.mountain-toggle-scene-wrapper.has-intro-animation .mountain6 {
   animation-delay: 0.25s;
 }
 
-.mountain-toggle-scene-wrapper .mountain7 {
+.mountain-toggle-scene-wrapper.has-intro-animation .mountain7 {
   animation-delay: 0.3s;
 }
 
-.mountain-toggle-scene-wrapper .right {
+.mountain-toggle-scene-wrapper.has-intro-animation .right {
   animation: mountain-toggle-go-left 1s 0.08s both;
 }
 
-.mountain-toggle-scene-wrapper .tree {
+.mountain-toggle-scene-wrapper.has-intro-animation .tree {
   animation: mountain-toggle-go-up 1s both;
 }
 
-.mountain-toggle-scene-wrapper .sun {
+.mountain-toggle-scene-wrapper.has-intro-animation .sun {
   animation: mountain-toggle-fade-in 0.8s 0.1s both;
 }
 
-.mountain-toggle-scene-wrapper .sky {
+.mountain-toggle-scene-wrapper.has-intro-animation .sky {
   animation: mountain-toggle-sky 0.9s 0.05s both;
 }
 
