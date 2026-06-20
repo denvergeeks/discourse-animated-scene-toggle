@@ -1,0 +1,19 @@
+toggle_before_icon:
+  default: "search"
+  type: string
+  description: "Insert the animated toggle before this header icon key"
+
+show_for_anons:
+  default: true
+  type: bool
+  description: "Show the toggle for anonymous visitors"
+
+compact_mode:
+  default: false
+  type: bool
+  description: "Use a slightly smaller header control"
+
+debug_mode:
+  default: false
+  type: bool
+  description: "Show iframe asset load diagnostics in the header control"

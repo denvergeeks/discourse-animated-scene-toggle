@@ -1,0 +1,88 @@
+.animated-scene-toggle-item {
+  display: flex;
+  align-items: center;
+}
+
+.animated-scene-toggle-header-button {
+  width: 48px;
+  min-width: 48px;
+  height: 44px;
+  padding: 0 !important;
+  border: 0;
+  background: transparent;
+  gap: 0.35rem;
+}
+
+.animated-scene-toggle-header-button.is-compact {
+  width: 42px;
+  min-width: 42px;
+}
+
+.animated-scene-toggle__inner {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 44px;
+  overflow: hidden;
+}
+
+.animated-scene-toggle-header-button.is-compact .animated-scene-toggle__inner {
+  width: 42px;
+}
+
+.animated-scene-toggle__frame {
+  width: 263px;
+  height: 525px;
+  border: 0;
+  background: transparent;
+  pointer-events: none;
+  transform: scale(0.0835);
+  transform-origin: center;
+}
+
+.animated-scene-toggle-header-button.is-compact .animated-scene-toggle__frame {
+  transform: scale(0.072);
+}
+
+.animated-scene-toggle__fallback {
+  position: absolute;
+  inset: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--danger) 18%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--danger) 55%, transparent);
+}
+
+.animated-scene-toggle__fallback-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--danger);
+}
+
+.animated-scene-toggle__debug-text {
+  max-width: 16ch;
+  font-size: var(--font-down-2);
+  line-height: 1.1;
+  text-align: left;
+  color: var(--primary-medium);
+}
+
+.animated-scene-toggle-header-button.has-frame-failure .animated-scene-toggle__debug-text {
+  color: var(--danger);
+}
+
+.animated-scene-toggle-header-button:focus-visible .animated-scene-toggle__inner,
+.animated-scene-toggle-header-button:hover .animated-scene-toggle__inner {
+  filter: drop-shadow(0 0 0.4px var(--tertiary-low)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-scene-toggle__frame {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,15 @@
+en:
+  theme_metadata:
+    description: "Production-hardened asset-backed animated scene dark/light toggle for Discourse core color mode switching"
+    settings:
+      toggle_before_icon: "Insert the animated toggle before this header icon key"
+      show_for_anons: "Show the toggle for anonymous visitors"
+      compact_mode: "Use a slightly smaller header control"
+      debug_mode: "Show iframe asset load diagnostics in the header control"
+
+  animated_scene_toggle:
+    switch_to_dark: "Switch to dark mode"
+    switch_to_light: "Switch to light mode"
+    asset_failed: "Animated toggle asset failed to load"
+    asset_loading: "Loading animated toggle"
+    asset_ready: "Animated toggle ready"

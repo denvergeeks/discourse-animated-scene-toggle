@@ -1,0 +1,16 @@
+{
+  "name": "Animated Scene Color Toggle",
+  "component": true,
+  "authors": "Perplexity",
+  "about_url": "https://meta.discourse.org/t/dark-light-mode-toggle-now-available-in-core/350991/",
+  "license_url": "https://opensource.org/licenses/MIT",
+  "theme_version": "0.1.0",
+  "minimum_discourse_version": "3.5.0.beta1",
+  "assets": {
+    "animated_scene_html": "assets/animated-scene.html"
+  },
+  "screenshots": [
+    "screenshots/light.png",
+    "screenshots/dark.png"
+  ]
+}
