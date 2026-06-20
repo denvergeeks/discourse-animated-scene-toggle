@@ -100,24 +100,6 @@ export default class MountainColorSchemeToggle extends Component {
             class={{this.wrapperClass}}
             style={{this.scaleStyle}}
           >
-            {{! Device frame }}
-            <svg
-              class="device"
-              width="278"
-              height="555"
-              viewBox="0 0 278 555"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <rect
-                x="0.311859"
-                y="0.0585327"
-                width="277.05"
-                height="554.736"
-                rx="25.4758"
-                fill="#0E0E0E"
-              />
-            </svg>
 
             <div class="container">
               <div class="toggle"></div>
