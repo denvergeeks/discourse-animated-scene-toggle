@@ -1,16 +1,23 @@
-toggle_before_icon:
-  default: "search"
-  type: string
-  description: "Insert the toggle before this header icon key"
-
 show_for_anons:
   default: true
   type: bool
-  description: "Show the mountain toggle for anonymous visitors too"
 
-mountain_toggle_scale:
-  default: 0.22
-  type: float
-  min: 0.1
-  max: 1.0
-  description: "Scale factor applied to the scene in the header"
+insert_before_icon:
+  default: "search"
+  type: string
+
+toggle_width:
+  default: 72
+  type: integer
+  min: 56
+  max: 96
+
+toggle_height:
+  default: 36
+  type: integer
+  min: 28
+  max: 48
+
+enable_intro_animation:
+  default: true
+  type: bool
