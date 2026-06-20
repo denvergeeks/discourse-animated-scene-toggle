@@ -157,7 +157,7 @@ export default class AnimatedSceneToggle extends Component {
           <span class="animated-scene-toggle__inner" aria-hidden="true">
             <span
               class="animated-scene-toggle__scene-root"
-              {{did-insert this.sceneInserted}}
+              {{didInsert this.sceneInserted}}
             >
               {{#each this.sceneMarkup as |region|}}
                 {{region}}
