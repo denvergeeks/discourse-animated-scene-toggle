@@ -16,4 +16,4 @@ compact_mode:
 debug_mode:
   default: false
   type: bool
-  description: "Show iframe asset load diagnostics in the header control"
+  description: "Show render diagnostics in the header control"
