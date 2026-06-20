@@ -1,8 +1,13 @@
 en:
   theme_metadata:
-    description: "Animated mountain scene dark/light toggle wired to Discourse color schemes"
+    description: "Adds a compact animated mountain-style light/dark toggle to the Discourse header using the supported headerIcons API."
+    settings:
+      show_for_anons: "Show the toggle for anonymous visitors."
+      insert_before_icon: "Header icon key to insert this toggle before, for example search."
+      toggle_width: "Toggle width in pixels."
+      toggle_height: "Toggle height in pixels."
+      enable_intro_animation: "Enable the initial mountain/sky entrance animations."
 
   mountain_toggle:
     switch_to_dark: "Switch to dark mode"
     switch_to_light: "Switch to light mode"
-    color_mode: "Color mode"
