@@ -3,10 +3,9 @@ import { service } from "@ember/service";
 import { action } from "@ember/object";
 import { tracked } from "@glimmer/tracking";
 import { on } from "@ember/modifier";
-import { apiInitializer } from "discourse/lib/api";
 import I18n from "discourse-i18n";
 
-class MountainColorSchemeToggle extends Component {
+export default class MountainColorSchemeToggle extends Component {
   @service currentUser;
   @service themeSelector;
 
@@ -336,9 +335,3 @@ class MountainColorSchemeToggle extends Component {
     {{/if}}
   </template>
 }
-
-export default apiInitializer((api) => {
-  api.headerIcons.add("mountain-color-scheme-toggle", MountainColorSchemeToggle, {
-    before: settings.insert_before_icon || "search",
-  });
-});
